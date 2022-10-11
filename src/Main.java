@@ -5,11 +5,17 @@ public class Main {
     public static void main(String[] args) {
 
 
-        WordHistogram wordHistogram = new WordHistogram(STRING);
+        /*WordHistogramHeritage wordHistogram = new WordHistogramHeritage(STRING);
         System.out.println("MAP has " + wordHistogram.size() + " distinct words");
 
         for (String word : wordHistogram) {
-            System.out.println(word + " : " + wordHistogram.get(word));
+            System.out.println(word + " : " + wordHistogram.get(word));*/
+
+            WordHistogramComposition wordHistogram = new WordHistogramComposition(STRING);
+            System.out.println("MAP has " + wordHistogram.map.size() + " distinct words");
+
+            for (String word : wordHistogram) {
+                System.out.println(word + " : " + wordHistogram.map.get(word));
         }
     }
 }

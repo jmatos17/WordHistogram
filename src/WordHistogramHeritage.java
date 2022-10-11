@@ -1,12 +1,10 @@
-import com.sun.corba.se.spi.orbutil.proxy.CompositeInvocationHandler;
-
 import java.util.*;
 import java.util.function.Consumer;
 
-public class WordHistogram extends HashMap <String, Integer> implements Iterable <String> {
+public class WordHistogramHeritage extends HashMap <String, Integer> implements Iterable <String> {
 
 
-    public WordHistogram(String string) {
+    public WordHistogramHeritage(String string) {
         String[] words = string.split(" ");
 
         for (String w : words) {
